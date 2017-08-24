@@ -19,7 +19,7 @@ public class Movie {
             referencedColumnName="ID"),
             inverseJoinColumns = @JoinColumn(name = "ACTOR_ID",
             referencedColumnName = "ID"))
-            private Set<Actor> cast;
+    private Set<Actor> cast;
 
     public long getId() {
         return id;

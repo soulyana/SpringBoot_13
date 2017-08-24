@@ -24,11 +24,25 @@ public class HomeController {
         // Now let's create a movie
         Movie movie = new Movie();
         movie.setTitle("Emoji Movie");
+        movie.setYear(2017);
         movie.setDescription("About Emojis...");
+
+        // Creates other movies
+        Movie movie1 = new Movie();
+        movie1.setTitle("Valerian and the City of a Thousand Planets");
+        movie1.setYear(2017);
+        movie1.setDescription("Interstellar adventures");
+
+        Movie movie2 = new Movie();
+        movie2.setTitle("Wonder Woman");
+        movie2.setYear(2017);
+        movie2.setDescription("Girls rule the world...");
 
         // Add the movie to an empty list
         Set<Movie> movies = new HashSet<Movie>();
         movies.add(movie);
+        movies.add(movie1);
+        movies.add(movie2);
 
         // Add the list of movies to the actor's movie list
         actor.setMovies(movies);
